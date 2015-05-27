@@ -393,6 +393,7 @@ int predict(Matrix &Theta1, Matrix &Theta2, Matrix &X)
             maxx = h2.data[0][i];
             maxi = i;
         }
+    cout<<endl<<h2.transpose();
     return maxi;
 }
 
@@ -411,7 +412,7 @@ int main()
     int num_labels = y.maxx()+1;
     int m = X.size()[0];
     double coeff = 1.0 / m;
-    double alpha = -0.1;
+    double alpha = -71;
     int iters = 3000;
 
     //Set Theta
@@ -422,7 +423,7 @@ int main()
     Theta1.randomize();
     Theta2.randomize();
 
-    for(int i=0;i<3000;i++)
+    for(int i=0;i<iters;i++)
     {
         curr_cost = CostFunction(input_layer_size,hidden_layer_size,num_labels,
                                 Theta1,Theta2, X, y );
