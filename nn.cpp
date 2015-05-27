@@ -138,10 +138,6 @@ public:
                 data[i][j] = ((double) rand() / (RAND_MAX)) ;
     }
 
-    friend ostream& operator<<(ostream& os, const vector<int> &V);
-    friend ostream& operator<<(ostream& os, const Matrix *M);
-    friend ostream& operator<<(ostream& os, const vector<vector<double> > &V);
-    friend Matrix   operator+(const Matrix A, const Matrix B);
 
 };
 
