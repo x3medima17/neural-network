@@ -433,4 +433,6 @@ int main()
     }
     Matrix x = X.slice(5,5,-1,-1);
     cout<<predict(Theta1,Theta2,x);
+
+    return 0;
 }
