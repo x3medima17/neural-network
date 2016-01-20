@@ -4,5 +4,6 @@ compiler:
 os:
 - linux
 before_script:
--echo $(uname -a)
-script: g++ nn.cpp && ./a.out
+- echo $(uname -a)
+script: 
+- g++ nn.cpp && ./a.out
