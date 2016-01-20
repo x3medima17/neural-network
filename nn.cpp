@@ -413,7 +413,7 @@ int main()
     int m = X.size()[0];
     double coeff = 1.0 / m;
     double alpha = -71;
-    int iters = 30;
+    int iters = 30
 
     //Set Theta
     Matrix Theta1(hidden_layer_size,input_layer_size+1);
