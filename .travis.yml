@@ -1,0 +1,8 @@
+language: cpp
+compiler:
+- g++
+os:
+- linux
+before_script:
+-echo $(uname -a)
+script: g++ nn.cpp && ./a.out
